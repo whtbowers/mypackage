@@ -1,5 +1,5 @@
 Package: mypackage
-Title: What the Package Does (One Line, Title Case)
+Title: Sample Package (York Package Development Workshop 2020)
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "Will",
