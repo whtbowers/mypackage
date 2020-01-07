@@ -1,0 +1,70 @@
+# Note new build tab in Rstudio
+# NAMESPACE file updates automatically
+# http://www-users.york.ac.uk/~er13/York2020_01
+
+library(devtools)
+library(tidyverse)
+library(usethis)
+library(testthat)
+
+# Committing - add string for commit message
+# use_git()
+
+# Calculate the sum of squares
+height <- rnorm(100, mean = 20, sd = 2) %>%
+  round(4)
+
+# sum_squares <- function(v) {
+#   ((v - mean(v))^2)
+# }
+#
+# sum_squares(height)
+
+# Send function to package file
+# use_r("sum_squares")
+# Simulate package installation
+#load_all()
+# sum_squares(height)
+
+# Check package works
+# check()
+
+# Ensure github used
+# use_github()
+# edit_r_environ()
+
+# Apply MIT license
+# use_mit_license("Will Bowers")
+
+# Add documentation
+# document()
+
+# Calculate standard error
+# se <- function(v) {
+#   sd(v)/sqrt(length(v))
+# }
+
+se(height)
+
+# Calculate one-sample Z-test
+# z_test <- function(v, mu) {
+#   mean(v) - mu /se(v)
+# }
+#
+# z_test(height, mu=17)
+
+##### Package Dependencies
+# Note: importing a specific function makes a package more robust.
+# Importing 2 packages with function of same name will lead to overwrite
+
+# density_plot <- function(v) {
+#   # Needs ggplot2
+#   if (!requireNamespace("ggplot2", quietly = TRUE)) {
+#     stop("Need ggplot2 Use install.packages('ggplot2')")
+#   }
+#   ggplot2::ggplot(data.frame(values = v),
+#                   ggplot2::aes(x = values)) +
+#     ggplot2::geom_density()
+#   }
+
+#####
